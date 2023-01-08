@@ -1,0 +1,8 @@
+body{
+    background-image: url("bg.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
