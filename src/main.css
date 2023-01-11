@@ -10,3 +10,7 @@
 body {
     text-align: center;
 }
+#embedplayer {
+    margin: 10px;
+    opacity: 0.9;
+}

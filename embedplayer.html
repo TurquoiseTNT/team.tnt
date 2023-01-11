@@ -17,9 +17,13 @@
         function start() {
             var url = decodeURIComponent(location.href);
             var split = url.split('#')
-            alert(split)
             var info = "https://tnt.is-a.dev/site-embeds/" + split[1] + ".html"
-            alert(info)
+            document.getElementById('embedplayer').src = info;
+            var height1 = window.innerHeight / 100;
+            var height2 = height1 * 80;
+            var width1 = window.innerWidth - 40;
+            document.getElementById('embedplayer').height = height2;
+            document.getElementById('embedplayer').width = width1;
         }
     </script>
     <!-- Title -->
@@ -31,14 +35,13 @@
         <div class="container-fluid">
             <span class="navbar-brand mb-0 h1"><img height="45px" src="img/tnt.png" alt="TurquoiseTNT"> TurquoiseTNT Multimedia</span>
             <div class="nav-item">
-                <a href="#"><button class="btn btn-outline-primary"> Jump to Gaming</button></a>
-                <a href="#"><button type="button" class="btn btn-outline-primary">Jump to Diagrams</button></a>
+                <button onclick="history.back();" class="btn btn-outline-primary">Back </button>
             </div>
         </div>
     </nav>
     
     <!--  -->
-    <iframe src="" id="embedplayer"></iframe>
+    <iframe src="" id="embedplayer" width="100%" height="800"></iframe>
     <script>start();</script>
 
     <!-- Footer -->
