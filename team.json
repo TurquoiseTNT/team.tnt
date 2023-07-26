@@ -4,13 +4,15 @@
         "role": "CEO / Founder",
         "desc": "The CEO of TurquoiseTNT Multimedia.",
         "btn": "https://youtube.com/@sebtnt",
-        "btntext": "Visit my YouTube"
+        "btntext": "Visit my YouTube",
+        "email": "sebtnt@proton.me"
     },
     {
         "nick": "AlexTNT",
         "role": "Professional Gamer",
         "desc": "Pro Gamer on Nintendo Switch and 2DS.",
         "btn": "https://example.org/",
-        "btntext": "Visit my YouTube"
+        "btntext": "Visit my YouTube",
+        "email": "turquoisetntmultimedia+alextnt@gmail.com"
     }
 ]
