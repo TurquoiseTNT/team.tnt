@@ -29,14 +29,7 @@
     
     <!--  -->
     <h2>Meet the Team</h2>
-    <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-    </div>
+    
     <script>
         function createCard(img, title, desc, btn, btnl, mail){
             var d1 = document.createElement("div");
@@ -69,6 +62,18 @@
                 d2.appendChild(mb);
             }
             d1.appendChild(d2);
+        }
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", "https://raw.githubusercontent.com/TurquoiseTNT/team.tnt/main/team.json");
+        xmlHttp.send( null );
+        for (var i=0; i < xmlHttp.responseText.length; i++) {
+            var i1 = xmlHttp.responseText[i]["img"];
+            var t1 = xmlHttp.responseText[i]["nick"]
+            var de1 = xmlHttp.responseText[i]["desc"]
+            var buton = xmlHttp.responseText[i]["btntext"]
+            var buttonlnk = xmlHttp.responseText[i]["btn"]
+            var ml = xmlHttp.responseText[i]["email"]
+            createCard(i1, t1, d1, button, buttonlnk, ml);
         }
     </script>
 
