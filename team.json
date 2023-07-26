@@ -3,12 +3,14 @@
         "nick": "SebTNT",
         "role": "CEO / Founder",
         "desc": "The CEO of TurquoiseTNT Multimedia.",
-        "link": "https://youtube.com/@sebtnt"
+        "btn": "https://youtube.com/@sebtnt",
+        "btntext": "Visit my YouTube"
     },
     {
         "nick": "AlexTNT",
         "role": "Professional Gamer",
         "desc": "Pro Gamer on Nintendo Switch and 2DS.",
-        "link": "https://example.org/"
+        "btn": "https://example.org/",
+        "btntext": "Visit my YouTube"
     }
 ]
