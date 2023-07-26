@@ -28,9 +28,49 @@
     </nav>
     
     <!--  -->
-    <h1>Hi! We are TurquoiseTNT Multimedia</h1>
-    <h2>We Create Open-Source Software for Free,</h2>
-    <h2>No Extra content or Subscriptions: Not even Ads.</h2>
+    <h2>Meet the Team</h2>
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <script>
+        function createCard(img, title, desc, btn, btnl, mail){
+            var d1 = document.createElement("div");
+            d1.className = "card";
+            d1.style = "width: 18rem";
+            document.body.appendChild(d1);
+            var i = document.createElement("img");
+            i.src = img;
+            i.className = "card-img-top";
+            d1.appendChild(i)
+            var d2 = document.createElement("div");
+            var t = document.createElement("h5");
+            t.className = "card-title";
+            t.innerText = title;
+            d2.appendChild(t);
+            var p = document.createElement("p");
+            p.className = "card-text";
+            p.innerText = desc;
+            d2.appendChild(p)
+            var btnlnk = document.createElement("a");
+            btnlnk.src = btnl;
+            btnlnk.innerText = btn;
+            btnlnk.className = "btn btn-primary";
+            d2.appendChild(btnlnk);
+            if (mail != "NONE"){
+                var mb = document.createElement("a");
+                mb.src = "mailto:" + mail;
+                mb.innerText = "Send me an Email";
+                mb.className = "btn btn-secondary";
+                d2.appendChild(mb);
+            }
+            d1.appendChild(d2);
+        }
+    </script>
 
     <!-- Footer -->
     <nav class="navbar fixed-bottom bg-body-tertiary bg-dark" data-bs-theme="dark">
